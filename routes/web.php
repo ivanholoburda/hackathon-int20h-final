@@ -22,3 +22,7 @@ Route::controller(AuthController::class)->group(function () {
     Route::post('/register', 'register')
         ->name('auth.register');
 });
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin/dashboard', fn () => Inertia::render('Admin/Dashboard'))->name('admin.dashboard');
+});
