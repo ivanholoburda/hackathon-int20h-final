@@ -11,7 +11,7 @@ createInertiaApp({
     },
     setup({ el, App, props }) {
         createRoot(el).render(
-            <Theme appearance={'dark'}>
+            <Theme appearance={'white'}>
                 <App {...props} />
             </Theme>
         )
