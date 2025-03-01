@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import React from 'react';
 import "@radix-ui/themes/styles.css";
 import {Theme} from "@radix-ui/themes";
+import '../css/app.css';
 
 createInertiaApp({
     resolve: name => {
